@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <nav>
+        <div class="navtext">Rock Paper Scissors</div>
+    </nav>
+    
+    <div class="game">
+            <form action="/play?choice=👊" method="post"><button type="submit" class="rock box">👊</button></form>
+            <form action="/play?choice=🖐️" method="post"><button type="submit" class="paper box">🖐️</button></form>
+            <form action="/play?choice=✌️" method="post"><button type="submit" class="scissor box">✌️</button></form>
+    </div>
+
+    <div class="reset_div cen">
+        <form action="/reset"><button type="submit" class="reset box">🛑</button></form>
+    </div>
+
+    <!-- <div class="score cen"> -->
+    <div class="points cen">
+        <div class="human">
+            <div class="name">You</div>
+            <div class="human_points point">{{ player_score }}</div>
+        </div>
+            <!-- <div class="line"></div>
+            <div class="ai">
+                <div class="name">A.I.</div>
+                <div class="ai_points point">{{ computer_score }}</div>
+            </div>
+        </div> -->
+    </div>
+    <div class="vs hor cen">
+        <div class="vs_name box_div">
+            {{ player_choice }}
+        </div>
+        <div class="decision">{{ decision }}</div>
+        <div class="vs_name box_div">
+            {{ computer_choice }}
+        </div>
+    </div>
+
+</body>
+</html>

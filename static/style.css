@@ -1,0 +1,126 @@
+body {
+    background-color: #30336b;
+    padding: 0;
+    margin: 0;
+}
+
+.cen {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.hor{
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: #130f40;
+    height: 75px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.navtext {
+    display: flex;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    color: #ecf0f1;
+    justify-content: center;
+    line-height: 75px;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.box {
+    cursor: pointer;
+    font-size: 90px;
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    background-color: #dff9fb;
+    line-height: 120px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.box:hover {    
+    font-size: 100px;
+    transition-duration: 0.2s;
+}
+
+.points {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.name {
+    font-size: 40px;
+    color: #d1d8e0;
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.point {
+    font-size: 20px;   
+    color: #d1d8e0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.line {
+    border-left: 2px solid #d1d8e0;
+    height: 90px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .vs {
+     margin-bottom: 40px;
+  }
+
+  .vs_name {
+    font-size: 90px;
+    display: block;
+  }
+
+  .human_points {
+    font-size: 30px;
+  }
+
+  .box_div {
+    font-size: 90px;
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    background-color: #dff9fb00;
+    line-height: 120px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .decision {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #d1d8e0;
+    line-height: 120px;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .reset_div {
+    margin-top: 40px;
+  }
